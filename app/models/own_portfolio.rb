@@ -1,0 +1,2 @@
+class OwnPortfolio < ApplicationRecord
+end

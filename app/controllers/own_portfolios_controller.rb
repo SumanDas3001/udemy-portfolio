@@ -1,0 +1,2 @@
+class OwnPortfoliosController < ApplicationController
+end
