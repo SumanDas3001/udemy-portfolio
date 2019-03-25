@@ -15,12 +15,11 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
-  # GET /blogs/1/edit
+
   def edit
   end
 
-  # POST /blogs
-  # POST /blogs.json
+
   def create
     @blog = Blog.new(blog_params)
 
