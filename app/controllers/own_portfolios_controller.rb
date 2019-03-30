@@ -25,6 +25,19 @@ class OwnPortfoliosController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    respond_to do |format|
+      if @portfolio_item.update(portfolio_params)
+        format.html {redirect_to own_portfolios_path, notice: "Blog successfully updated."}
+      else
+        format.html {render :edit}
+      end
+    end
+  end
+
   private
 
   def set_portfolio
