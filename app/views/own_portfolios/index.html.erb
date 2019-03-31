@@ -2,10 +2,10 @@
 <%= link_to "Add new item",  new_own_portfolio_url %>
 
 <% @portfolio_items.each do |portfolio_items| %>
-  <p><%= portfolio_items.title %></p>
+  <p><%= link_to portfolio_items.title, own_portfolio_url(portfolio_items) %></p>
   <p><%= portfolio_items.subtitle %></p>
   <p><%= portfolio_items.body %></p>
   <p><%= portfolio_items.main_image %></p>
   <%= image_tag portfolio_items.thumb_image if portfolio_items.thumb_image.present? %>
-  <%= link_to "EDit", edit_own_portfolio_url(portfolio_items.id)%>
+  <%= link_to "Edit", edit_own_portfolio_url(portfolio_items)%>
 <% end %>
