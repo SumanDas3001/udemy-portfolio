@@ -5,8 +5,6 @@ class OwnPortfoliosController < ApplicationController
     @portfolio_items = OwnPortfolio.all
   end
 
-  def show
-  end
 
   def new
     @portfolio_item = OwnPortfolio.new
@@ -34,6 +32,17 @@ class OwnPortfoliosController < ApplicationController
         format.html {redirect_to own_portfolios_path, notice: "Blog successfully updated."}
       else
         format.html {render :edit}
+      end
+    end
+  end
+
+  def show
+  end
+
+  def destroy
+    if @portfolio_item.destroy
+      respond_to do |format|
+        format.html { redirect_to own_portfolios_path, notice: "Post was deleted."}
       end
     end
   end

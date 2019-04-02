@@ -8,4 +8,5 @@
   <p><%= portfolio_items.main_image %></p>
   <%= image_tag portfolio_items.thumb_image if portfolio_items.thumb_image.present? %>
   <%= link_to "Edit", edit_own_portfolio_url(portfolio_items)%>
+  <%= link_to "Delete",  own_portfolio_url(portfolio_items), method: :delete, data: {confirm: "Are you sure?"}%>
 <% end %>
