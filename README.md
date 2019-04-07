@@ -18,7 +18,7 @@ end
 ```
 
 ```javascript
-alert('Hi there');
+alert('Hi there this is a blog and portfolio application :)');
 ```
 
 
