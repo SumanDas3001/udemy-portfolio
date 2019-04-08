@@ -13,12 +13,12 @@
 
 ```ruby
 def my_great_method
-	puts "here it is"
+  puts "here it is"
 end
 ```
 
 ```javascript
-alert('Hi there');
+alert('Hi there this is a blog and portfolio application :)');
 ```
 
 
