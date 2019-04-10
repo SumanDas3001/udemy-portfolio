@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   resources :blogs do
     member do
-      get :toggle_status # This routes it's for draft or published post
+      get :toggle_status # This routes is for draft or published post
     end
   end
   root "pages#home"
