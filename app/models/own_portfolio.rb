@@ -1,8 +1,13 @@
 class OwnPortfolio < ApplicationRecord
+
+	### Association
+	has_many :technologies
+
 	###  This is a concerns used to generate image
 	include Placeholder  
 
 	validates_presence_of :title, :body, :main_image, :thumb_image
+	
 	#### Callbacks
 	after_initialize :set_defaults  #### after_initialize only call when we create a new record.
 
