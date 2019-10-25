@@ -1,0 +1,12 @@
+<h1>Portfolio</h1>
+<%= link_to "Add new item",  new_own_portfolio_url %>
+
+<% @angular_portfolio_items.each do |portfolio_items| %>
+  <p><%= link_to portfolio_items.title, portfolio_show_path(portfolio_items) %></p>
+  <p><%= portfolio_items.subtitle %></p>
+  <p><%= portfolio_items.body %></p>
+  <p><%= portfolio_items.main_image %></p>
+  <%= image_tag portfolio_items.thumb_image if portfolio_items.thumb_image.present? %>
+  <%= link_to "Edit", edit_own_portfolio_url(portfolio_items)%>
+  <%= link_to "Delete", own_portfolio_url(portfolio_items), method: :delete, data: {confirm: "Are you sure?"}%>
+<% end %>

@@ -5,6 +5,10 @@ class OwnPortfoliosController < ApplicationController
     @portfolio_items = OwnPortfolio.all
   end
 
+  def angular
+    @angular_portfolio_items = OwnPortfolio.angular
+  end
+
 
   def new
     @portfolio_item = OwnPortfolio.new
