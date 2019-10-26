@@ -3,8 +3,9 @@ class OwnPortfolio < ApplicationRecord
 	has_many :technologies
 
 	#### Nested Attributes
-	accepts_nested_attributes_for :technologies, 
-																reject_if: lambda { |attrs| attrs['mame'].blank? }
+	accepts_nested_attributes_for :technologies
+
+	# accepts_nested_attributes_for :technologies, reject_if: lambda { |attrs| attrs['mame'].blank? }
 
 	####  This is a concerns used to generate image
 	include Placeholder  

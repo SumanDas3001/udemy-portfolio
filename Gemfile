@@ -8,6 +8,9 @@ gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 
+## For Authentication
+gem 'devise', '~> 4.7', '>= 4.7.1'
+
 # FriendlyId
 gem 'friendly_id', '~> 5.1'
 # Use Puma as the app server
