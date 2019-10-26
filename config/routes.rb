@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :own_portfolios, except: [:show]
   get 'angular-items', to: 'own_portfolios#angular'
   get 'portfolio/:id', to: 'own_portfolios#show', as: 'portfolio_show' # custom portfolio show path
