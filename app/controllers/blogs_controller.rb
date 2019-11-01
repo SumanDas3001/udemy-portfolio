@@ -4,10 +4,12 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
+    @page_title = "Portfolio Blogs"
   end
 
 
   def show
+    # @page_title = @blog.title
   end
 
 
