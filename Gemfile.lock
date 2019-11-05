@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/SumanDas3001/codecamp_view_tool
+  revision: fc241bd799f7ca64f4ebb4bb736a715b1571da58
+  specs:
+    codecamp_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -204,6 +210,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.0.0)
   byebug
+  codecamp_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.7, >= 4.7.1)
   friendly_id (~> 5.1)

@@ -16,6 +16,11 @@ module ApplicationHelper
 			content_tag(:p, greeting, class: "source-greeting")
 		end
 	end
+
+	#### Copyright
+	def copyright_generator
+		CodecampViewTool::Render.copyright 'Suman Das', 'All right reserved'
+	end
 end
 
 
