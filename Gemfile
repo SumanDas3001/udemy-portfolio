@@ -44,6 +44,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'codecamp_view_tool', git: 'https://github.com/SumanDas3001/codecamp_view_tool'
+gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
