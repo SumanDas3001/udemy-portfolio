@@ -7,20 +7,16 @@ class BlogsController < ApplicationController
     @page_title = "Portfolio Blogs"
   end
 
-
   def show
     # @page_title = @blog.title
   end
-
 
   def new
     @blog = Blog.new
   end
 
-
   def edit
   end
-
 
   def create
     @blog = Blog.new(blog_params)
@@ -36,7 +32,6 @@ class BlogsController < ApplicationController
     end
   end
 
-
   def update
     respond_to do |format|
       if @blog.update(blog_params)
@@ -48,7 +43,6 @@ class BlogsController < ApplicationController
       end
     end
   end
-
 
   def destroy
     @blog.destroy
