@@ -1,3 +1,7 @@
+https://www.youtube.com/watch?v=nvPOUdz5PL4
+
+
+
 # Udemy Portfolio Application 
 
 > This is a Ruby on Rails 5 application that allows users to create their own portfolios.
