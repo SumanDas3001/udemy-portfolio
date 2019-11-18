@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-    # @page_title = @blog.title
+    @page_title = @blog.title
   end
 
   def new
