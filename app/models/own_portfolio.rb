@@ -11,6 +11,9 @@ class OwnPortfolio < ApplicationRecord
 	include Placeholder  
 
 	validates_presence_of :title, :body, :main_image, :thumb_image
+
+	mount_uploader :thumb_image, OwnPortfolioUploader
+	mount_uploader :main_image, OwnPortfolioUploader
 	
 	#### Callbacks
 	after_initialize :set_defaults  #### after_initialize only call when we create a new record.
