@@ -14,5 +14,6 @@ Rails.application.routes.draw do
       get :toggle_status # This routes is for draft or published post
     end
   end
+  mount ActionCable.server => '/cable'
   root "pages#home"
 end
