@@ -1,7 +1,6 @@
 @import "bootstrap";
 @import "gritter";
 
-
 a,
 a:focus,
 a:hover {
@@ -17,7 +16,6 @@ a:hover {
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
 
 
 html,
@@ -93,8 +91,6 @@ body {
   }
 }
 
-
-
 .cover {
   padding: 0 1.5rem;
 }
@@ -106,7 +102,6 @@ body {
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
 
 
 @media (min-width: 40em) {
@@ -215,4 +210,9 @@ body {
 
 .app-card-container a {
   color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
