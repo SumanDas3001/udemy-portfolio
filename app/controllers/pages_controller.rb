@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def about
+    @skills = Skill.order("created_at DESC")
   end
 
   def contact
